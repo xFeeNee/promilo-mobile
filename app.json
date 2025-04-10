@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "promilo-mobile",
-    "slug": "promilo-mobile",
+    "name": "temp-project",
+    "slug": "temp-project",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
