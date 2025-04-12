@@ -18,7 +18,7 @@ const AppNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerShown: false, // Ukryj nagłówek nawigacji
+          headerShown: false,
           contentStyle: { backgroundColor: "transparent" },
           animation: "fade",
         }}

@@ -20,26 +20,26 @@ const MainScreen: React.FC = () => {
 
   return (
     <ImageBackground
-      source={require("../../assets/background.png")} // Tło w stylu GTA Vice City
+      source={require("../../assets/background.png")} // GTA Vice City style background
       style={styles.background}
     >
       <View style={styles.container}>
-        <Text style={styles.title}>Witaj w Promilo!</Text>
-        <Text style={styles.subtitle}>Wybierz opcję:</Text>
+        <Text style={styles.title}>Welcome to Promilo!</Text>
+        <Text style={styles.subtitle}>Choose an option:</Text>
 
         <TouchableOpacity
           style={styles.optionButton}
           onPress={() => navigation.navigate("BudgetAlcohol")}
         >
-          <Text style={styles.optionText}>Alkohol w Twoim budżecie</Text>
+          <Text style={styles.optionText}>Alcohol within Your Budget</Text>
           <Text style={styles.optionDescription}>
-            Znajdź najlepsze propozycje alkoholi w Twoim budżecie
+            Find the best alcohol options within your budget
           </Text>
         </TouchableOpacity>
 
-        {/* Tutaj będziemy dodawać kolejne opcje w przyszłości */}
+        {/* We will add more options here in the future */}
 
-        <Text style={styles.footer}>Promilo - Twój imprezowy kompan</Text>
+        <Text style={styles.footer}>Promilo - Your party companion</Text>
       </View>
     </ImageBackground>
   );
@@ -50,12 +50,12 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     height: "100%",
-    resizeMode: "cover", // Dodaj tę linię
+    resizeMode: "cover", // Add this line
   },
   container: {
     flex: 1,
     padding: 20,
-    paddingTop: 0, // Dodaj tę linię, aby usunąć górny padding
+    paddingTop: 0, // Add this line to remove top padding
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 32,
     fontWeight: "bold",
-    color: "#FF1493", // Różowy neonowy
+    color: "#FF1493", // Neon pink
     marginBottom: 10,
     textShadowColor: "rgba(0, 0, 0, 0.75)",
     textShadowOffset: { width: 2, height: 2 },
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 18,
-    color: "#00CED1", // Turkusowy neonowy
+    color: "#00CED1", // Neon turquoise
     marginBottom: 30,
     textShadowColor: "rgba(0, 0, 0, 0.75)",
     textShadowOffset: { width: 1, height: 1 },
@@ -79,13 +79,13 @@ const styles = StyleSheet.create({
   },
   optionButton: {
     width: "100%",
-    backgroundColor: "rgba(255, 20, 147, 0.7)", // Półprzezroczysty różowy
+    backgroundColor: "rgba(255, 20, 147, 0.7)", // Semi-transparent pink
     padding: 20,
     borderRadius: 10,
     marginBottom: 15,
     alignItems: "center",
     borderWidth: 2,
-    borderColor: "#00CED1", // Turkusowa obwódka
+    borderColor: "#00CED1", // Turquoise border
   },
   optionText: {
     fontSize: 20,

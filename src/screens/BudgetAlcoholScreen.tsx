@@ -276,8 +276,6 @@ const styles = StyleSheet.create({
   },
   resultsContainer: {
     flex: 1,
-
-    //maxHeight: height * 0.4, // Ograniczenie maksymalnej wysokości listy wyników
   },
   alcoholItem: {
     flexDirection: "row",

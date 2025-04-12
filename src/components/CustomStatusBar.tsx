@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 import { View, StatusBar, StatusBarStyle, StyleSheet } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 interface CustomStatusBarProps {
   children: ReactNode;
